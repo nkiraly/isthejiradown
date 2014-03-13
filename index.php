@@ -29,10 +29,12 @@
   $fuck_up_bullshit_excuse_du_jour = $fuck_up_reasons[$fuck_up_panicked_answer_key];
 ?>
 <html>
-<head>
-<title><?php echo $fuck_up_bullshit_excuse_du_jour['title']; ?></title>
-</head><body>
-<h1><?php echo $fuck_up_bullshit_excuse_du_jour['heading']; ?></h1>
-<p><?php echo $fuck_up_bullshit_excuse_du_jour['message']; ?></p>
-<p><?php echo $fuck_your_shit_reason; ?></p>
-</body></html>
+  <head>
+    <title><?php echo $fuck_up_bullshit_excuse_du_jour['title']; ?></title>
+  </head>
+  <body>
+    <h1><?php echo $fuck_up_bullshit_excuse_du_jour['heading']; ?></h1>
+    <p><?php echo $fuck_up_bullshit_excuse_du_jour['message']; ?></p>
+    <p><?php echo $fuck_your_shit_reason; ?></p>
+  </body>
+</html>
