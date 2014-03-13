@@ -20,7 +20,7 @@
     'bad_gateway_attitude' => array(
       'title' => "502 Bad Gateway",
       'heading' => "Bad Gateway",
-      'message' => "The proxy server recieved and invalid response from an upstream server with an attitude problem."
+      'message' => "The proxy server recieved an invalid response from an upstream server with an attitude problem."
     ),
   );
   $fuck_up_reason_index = array_keys($fuck_up_reasons);
