@@ -15,7 +15,7 @@
     'unavailable_capacity' => array(
       'title' => "503 Service Temporarily Unavailable",
       'heading' => "Service Temporarily Unavailable",
-      'message' => "The server is temporarily unable to service your request due to overuse or failure of air conditioning units. Please try when your shit is less important."
+      'message' => "The server is temporarily unable to service your request due to general over-subscription or failure of air conditioning units. Please try when your shit is less important."
     ),
     'bad_gateway_attitude' => array(
       'title' => "502 Bad Gateway",
