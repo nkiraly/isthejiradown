@@ -7,20 +7,20 @@
   );
   $fuck_your_shit_reason = $fuck_your_shit_reasons[rand(0, count($fuck_your_shit_reasons) - 1)];
   $fuck_up_reasons = array(
-    'internal_error_rage' => array(
+    'internal_error_sean' => array(
       'title' => "500 Internal Server Error",
       'heading' => "Internal Server Error",
       'message' => "Something inside the server is making an awful clanging. Better call Sean."
     ),
-    'unavailable_rage' => array(
+    'unavailable_capacity' => array(
       'title' => "503 Service Temporarily Unavailable",
       'heading' => "Service Temporarily Unavailable",
-      'message' => "The server is temporarily unable to service your request due to maintenance downtime or capacity problems. Please try again later."
+      'message' => "The server is temporarily unable to service your request due to overuse or failure of air conditioning units. Please try when your shit is less important."
     ),
-    'bad_gateway_rage' => array(
+    'bad_gateway_attitude' => array(
       'title' => "502 Bad Gateway",
       'heading' => "Bad Gateway",
-      'message' => "The proxy server recieved and invalid response from and upstream server."
+      'message' => "The proxy server recieved and invalid response from an upstream server with an attitude problem."
     ),
   );
   $fuck_up_reason_index = array_keys($fuck_up_reasons);
