@@ -1,4 +1,3 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <?php
   $fuck_your_shit_reasons = array(
   	"And oh yeah, fuck you.",
@@ -42,10 +41,16 @@
   $fuck_up_panicked_answer_index = rand(0, count($fuck_up_reason_index) - 1);
   $fuck_up_panicked_answer_key = $fuck_up_reason_index[$fuck_up_panicked_answer_index];
   $fuck_up_bullshit_excuse_du_jour = $fuck_up_reasons[$fuck_up_panicked_answer_key];
-?>
+  $fuck_up_bullshit_excuse_title = $fuck_up_bullshit_excuse_du_jour['title'];
+  $fuck_up_bullshit_excuse_heading = $fuck_up_bullshit_excuse_du_jour['heading'];
+  $fuck_up_bullshit_excuse_message = $fuck_up_bullshit_excuse_du_jour['message'];
+
+
+$html_out = <<<HTML
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html>
   <head>
-    <title><?php echo $fuck_up_bullshit_excuse_du_jour['title']; ?></title>
+    <title>$fuck_up_bullshit_excuse_title</title>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -60,8 +65,13 @@
 
   </head>
   <body>
-    <h1><?php echo $fuck_up_bullshit_excuse_du_jour['heading']; ?></h1>
-    <p><?php echo $fuck_up_bullshit_excuse_du_jour['message']; ?></p>
-    <p><?php echo $fuck_your_shit_reason; ?></p>
+    <h1>$fuck_up_bullshit_excuse_heading</h1>
+    <p>$fuck_up_bullshit_excuse_message</p>
+    <p>$fuck_your_shit_reason</p>
   </body>
 </html>
+HTML;
+
+echo $html_out;
+
+?>
