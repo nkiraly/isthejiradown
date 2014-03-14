@@ -7,15 +7,30 @@
   );
   $fuck_your_shit_reason = $fuck_your_shit_reasons[rand(0, count($fuck_your_shit_reasons) - 1)];
   $fuck_up_reasons = array(
-    'internal_error_sean' => array(
+    'internal_error_clang' => array(
       'title' => "500 Internal Server Error",
       'heading' => "Internal Server Error",
-      'message' => "Something inside the server is making an awful clanging. Better call Sean."
+      'message' => "Something inside the server is making an awful clanging."
+    ),
+    'unavailable_underappreciation' => array(
+      'title' => "503 Service Temporarily Unavailable",
+      'heading' => "Service Temporarily Unavailable",
+      'message' => "The server is temporarily unable to service your request due to over-subscription and underappreciation."
     ),
     'unavailable_capacity' => array(
       'title' => "503 Service Temporarily Unavailable",
       'heading' => "Service Temporarily Unavailable",
-      'message' => "The server is temporarily unable to service your request due to general over-subscription or failure of air conditioning units. Please try when your shit is less important."
+      'message' => "The server is temporarily unable to service your request due to failure of air conditioning units."
+    ),
+    'unavailable_fuckyou' => array(
+      'title' => "503 Service Temporarily Unavailable",
+      'heading' => "Service Temporarily Unavailable",
+      'message' => "The server is temporarily unable to service your request because fuck you, that's why."
+    ),
+    'unavailable_trylater' => array(
+      'title' => "503 Service Temporarily Unavailable",
+      'heading' => "Service Temporarily Unavailable",
+      'message' => "The server is temporarily unable to service your petty request. Honestly bro, I'd just try again later."
     ),
     'bad_gateway_attitude' => array(
       'title' => "502 Bad Gateway",
