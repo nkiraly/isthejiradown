@@ -3,6 +3,7 @@
   	"And oh yeah, fuck you.",
   	"Oh, and fuck your ticket edit.",
     "That edit was cray, brah. Rethink yourself.",
+    "Honestly bro, I'd just try again later.",
     "If the problem persists, please open a JIRA ticket."
   );
   $fuck_your_shit_reason = $fuck_your_shit_reasons[rand(0, count($fuck_your_shit_reasons) - 1)];
@@ -30,7 +31,7 @@
     'unavailable_trylater' => array(
       'title' => "503 Service Temporarily Unavailable",
       'heading' => "Service Temporarily Unavailable",
-      'message' => "The server is temporarily unable to service your petty request. Honestly bro, I'd just try again later."
+      'message' => "The server is temporarily unable to service your petty request."
     ),
     'bad_gateway_attitude' => array(
       'title' => "502 Bad Gateway",
