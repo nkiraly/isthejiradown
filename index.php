@@ -2,7 +2,8 @@
   $fuck_your_shit_reasons = array(
   	"And oh yeah, fuck you.",
   	"Oh, and fuck your ticket edit.",
-    "That edit was cray, brah. Rethink yourself."
+    "That edit was cray, brah. Rethink yourself.",
+    "If the problem persists, please open a JIRA ticket."
   );
   $fuck_your_shit_reason = $fuck_your_shit_reasons[rand(0, count($fuck_your_shit_reasons) - 1)];
   $fuck_up_reasons = array(
@@ -35,6 +36,11 @@
       'title' => "502 Bad Gateway",
       'heading' => "Bad Gateway",
       'message' => "The proxy server recieved an invalid response from an upstream server with an attitude problem."
+    ),
+    'gateway_timeout_please_jira' => array(
+      'title' => "504 Gateway Timeout",
+      'heading' => "Gateway Timeout",
+      'message' => "The server was acting as a gateway or proxy and did not receive a timely response from the self important upstream server."
     ),
   );
   $fuck_up_reason_index = array_keys($fuck_up_reasons);
