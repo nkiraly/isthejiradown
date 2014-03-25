@@ -1,7 +1,9 @@
 <?php
+
   $fuck_your_shit_reasons = array(
-  	"And oh yeah, fuck you.",
-  	"Oh, and fuck your ticket edit.",
+    "Holy Shit. You still work there? Fuuuuuuck."/   // \salute Lance Nealy our muse
+    "And oh yeah, fuck you.",
+    "Oh, and fuck your ticket edit.",
     "That edit was cray, brah. Rethink yourself.",
     "Honestly bro, I'd just try again later.",
     "If the problem persists, please open a JIRA ticket."
