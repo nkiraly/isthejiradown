@@ -25,7 +25,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
   $fuck_your_shit_reasons = array(
-    "Holy Shit. You still work there? Fuuuuuuck."/   // \salute Lance Nealy our muse
+    "Holy Shit. You still work there? Fuuuuuuck.",   // \salute Lance Nealy our muse
     "And oh yeah, fuck you.",
     "Oh, and fuck your ticket edit.",
     "That edit was cray, brah. Rethink yourself.",
