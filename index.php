@@ -92,6 +92,7 @@ $html_out = <<<HTML
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-48981517-2', 'isthejiradown.com');
+  ga('require', 'displayfeatures');
   ga('send', 'pageview');
 
 </script>
