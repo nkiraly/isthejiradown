@@ -59,6 +59,11 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       'heading' => "Service Temporarily Unavailable",
       'message' => "The server is temporarily unable to service your petty request."
     ),
+    'unavailable_losthyperbole' => array(
+      'title' => "503 Service Temporarily Unavailable",
+      'heading' => "Service Temporarily Unavailable",
+      'message' => "The JIRA server could not be contacted. This may be a temporary glitch or you might have just lost literally everything ever."
+    ),
     'bad_gateway_attitude' => array(
       'title' => "502 Bad Gateway",
       'heading' => "Bad Gateway",
