@@ -30,7 +30,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "Oh, and fuck your ticket edit.",
     "That edit was cray, brah. Rethink yourself.",
     "Honestly bro, I'd just try again later.",
-    "If the problem persists, please open a JIRA ticket."
+    "If the problem persists, please open a JIRA ticket.",
+    "There was an unexpected error with the forklift while loading the issue on to the dock.",
+    "If you think this message is wrong, and you're still convinced it will help, please contact your <a href=\"https://github.com/nkiraly/isthejiradown\">JIRA administrators</a>."
   );
   $fuck_your_shit_reason = $fuck_your_shit_reasons[rand(0, count($fuck_your_shit_reasons) - 1)];
   $fuck_up_reasons = array(
