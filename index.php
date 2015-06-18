@@ -39,7 +39,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       'heading' => "Internal Server Error",
       'message' => "Something inside the server is making an awful clanging."
     ),
-    'internal_error_issue_macro' => array(
+    'internal_error_issue_macro_pimentaco' => array(
       'title' => "500 Internal Server Error",
       'heading' => "Internal Server Error",
       'message' => "JIRA Issues Macro: Unable to digistruct the jiras, maybe you should have a pimentaco before you try again. Catch a Riiiiiiiiiiide!"
