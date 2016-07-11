@@ -75,7 +75,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     'bad_gateway_attitude' => array(
       'title' => "502 Bad Gateway",
       'heading' => "Bad Gateway",
-      'message' => "The proxy server recieved an invalid response from an upstream server with an attitude problem."
+      'message' => "The proxy server received an invalid response from an upstream server with an attitude problem."
     ),
     'gateway_timeout_please_jira' => array(
       'title' => "504 Gateway Timeout",
