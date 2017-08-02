@@ -82,6 +82,11 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       'heading' => "Gateway Timeout",
       'message' => "The server was acting as a gateway or proxy and did not receive a timely response from the self important upstream server."
     ),
+    'activity_source_slow' => array(
+      'title' => "504 Gateway Timeout",
+      'heading' => "Gateway Timeout",
+      'message' => "The activity source for 'JIRA' was slow to respond and isn't included because second place is first place loser"
+    ),
   );
   $fuck_up_reason_index = array_keys($fuck_up_reasons);
   $fuck_up_panicked_answer_index = rand(0, count($fuck_up_reason_index) - 1);
