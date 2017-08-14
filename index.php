@@ -87,6 +87,11 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       'heading' => "Gateway Timeout",
       'message' => "The activity source for 'JIRA' was slow to respond and isn't included because second place is first place loser"
     ),
+    'unable_to_render_embedded_obj' => array(
+      'title' => "404 Not Found",
+      'heading' => "Not Found",
+      'message' => "Unable to render embedded object: File (fuck-you.png) not found. I didn't lose that file, you lost that file."
+    ),
   );
   $fuck_up_reason_index = array_keys($fuck_up_reasons);
   $fuck_up_panicked_answer_index = rand(0, count($fuck_up_reason_index) - 1);
