@@ -1,0 +1,35 @@
+name: Container
+
+on:
+  push:
+    tags:
+      - "v[1-9]+.[0-9]+.[0-9]+"
+    branches:
+      - "master"
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Login to Docker Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ${{ secrets.DCR_HOST }}
+          username: ${{ secrets.DCR_USERNAME }}
+          password: ${{ secrets.DCR_TOKEN }}
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: |
+            ${{ DCR_REPOSITORY }}/isthejiradown:latest
+            ${{ DCR_REPOSITORY }}/isthejiradown:user/app:${GITHUB_REF:11}
+      - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
