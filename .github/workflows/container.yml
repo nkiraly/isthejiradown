@@ -21,6 +21,9 @@ jobs:
           registry: ${{ secrets.DCR_HOST }}
           username: ${{ secrets.DCR_USERNAME }}
           password: ${{ secrets.DCR_TOKEN }}
+      - name: Get version of branch
+        id: get_version
+        run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
@@ -30,6 +33,6 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DCR_REPOSITORY }}/isthejiradown:latest
-            ${{ secrets.DCR_REPOSITORY }}/isthejiradown:${GITHUB_REF:11}
+            ${{ secrets.DCR_REPOSITORY }}/isthejiradown:${{ steps.get_version.outputs.VERSION }}
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
