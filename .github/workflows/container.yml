@@ -33,7 +33,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ${{ secrets.DCR_REPOSITORY }}/isthejiradown:latest
-            ${{ secrets.DCR_REPOSITORY }}/isthejiradown:${{ steps.get_version.outputs.VERSION }}
+            ${{ secrets.DCR_HOST }}/${{ secrets.DCR_REPOSITORY }}/isthejiradown:latest
+            ${{ secrets.DCR_HOST }}/${{ secrets.DCR_REPOSITORY }}/isthejiradown:${{ steps.get_version.outputs.VERSION }}
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
