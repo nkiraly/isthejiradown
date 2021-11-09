@@ -92,6 +92,11 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       'heading' => "Not Found",
       'message' => "Unable to render embedded object: File (fuck-you.png) not found. I didn't lose that file, you lost that file."
     ),
+    'permanent_recently_updated_filter' => array(
+      'title' => "203 Lots of Assumptions About Your Filters Made",
+      'heading' => "Recently Updated is All That Matters",
+      'message' => "Failure to save your late day ticket edits. To try to make you forget about your lost work, you will now only see recently updated tickets in this browser."
+    ),
   );
   $fuck_up_reason_index = array_keys($fuck_up_reasons);
   $fuck_up_panicked_answer_index = rand(0, count($fuck_up_reason_index) - 1);
