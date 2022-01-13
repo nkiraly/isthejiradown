@@ -23,6 +23,7 @@ jobs:
           registry: ${{ secrets.DCR_HOST }}
           username: ${{ secrets.DCR_USERNAME }}
           password: ${{ secrets.DCR_TOKEN }}
+        if: false # not publishing snapshots to teh secret DCR these days
       - name: Get version of branch
         id: get_version
         run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
